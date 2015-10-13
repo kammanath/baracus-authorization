@@ -4,10 +4,10 @@ export { default as AuthorizationStrategyError } from './errors/AuthorizationStr
 
 export default class AuthorizationStrategy extends Strategy {
   /**
-   * Set required methods that subclasses must override.
-   *
-   * @return {array} Array of method names.
-   */
+  * Set required methods that subclasses must override.
+  *
+  * @return {array} Array of method names.
+  */
   static get requiredMethods() {
     return [
       'getUserAuthorizationStatus',
@@ -24,6 +24,6 @@ export default class AuthorizationStrategy extends Strategy {
   @param sessionid
   @returns authorization status
   **/
-   getUserAuthorizationStatus(key,callback) {}
+  getUserAuthorizationStatus(key,callback) {}
 
 }

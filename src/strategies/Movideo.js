@@ -18,6 +18,6 @@ export default class Movideo extends AuthorizationStrategy {
       else{
         callback(null,'exists');		// User is authorized
       }
-   });
- }
+    });
+  }
 }
